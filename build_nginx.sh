@@ -10,16 +10,8 @@ export SOURCE_OPENSSL=https://www.openssl.org/source/
 export SOURCE_PCRE=ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/
 export SOURCE_NGINX=http://nginx.org/download/
 
-# make a 'today' variable for use in back-up filenames later
-today=$(date +"%Y-%m-%d")
-
-# clean out any files from previous runs of this script
-rm -rf build
-rm -rf /etc/nginx-default
+# Create build folder
 mkdir build
-
-# ensure that we have the required software to compile our own nginx
-apt-get -y install curl wget build-essential
 
 # grab the source files
 wget -P ./build $SOURCE_PCRE$VERSION_PCRE.tar.gz
@@ -47,9 +39,6 @@ make clean
 && make \
 && make install_sw
 
-# rename the existing /etc/nginx directory so it's saved as a back-up
-mv /etc/nginx /etc/nginx-$today
-
 # build nginx, with various modules included/excluded
 cd $BPATH/$VERSION_NGINX
 mkdir -p $BPATH/nginx
@@ -72,11 +61,8 @@ mkdir -p $BPATH/nginx
 --without-mail_imap_module \
 && make && make install
 
-# rename the compiled 'default' /etc/nginx directory so its accessible as a reference to the 
+# rename the compiled 'default' /etc/nginx directory so its accessible as a reference to the
 new nginx defaults
 mv /etc/nginx /etc/nginx-default
-
-# now restore the previous version of /etc/nginx to /etc/nginx so the old settings are kept
-mv /etc/nginx-$today /etc/nginx
 
 echo "All done.";

@@ -1,6 +1,9 @@
 FROM resin/rpi-raspbian:jessie
 MAINTAINER Wouter De Schuyter <wouter.de.schuyter@gmail.com>
 
+# Args
+ARG v
+
 # Make sure everything is up to date
 RUN sudo apt-get update && sudo apt-get upgrade -y
 
@@ -11,7 +14,7 @@ RUN sudo apt-get install curl wget build-essential -y
 COPY build_nginx.sh /build_nginx.sh
 
 # Run build script & build NGINX from source
-RUN /build_nginx.sh 1.6.2
+RUN /build_nginx.sh ${v}
 
 # Remove build script
 RUN rm /build_nginx.sh

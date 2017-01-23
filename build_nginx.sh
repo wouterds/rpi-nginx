@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # names of latest versions of each package
-export VERSION_PCRE=pcre-8.38
+export VERSION_PCRE=pcre-8.39
 export VERSION_OPENSSL=openssl-1.0.2d
 export VERSION_NGINX=nginx-$1
 

@@ -61,8 +61,4 @@ mkdir -p $BPATH/nginx
 --without-mail_imap_module \
 && make && make install
 
-# rename the compiled 'default' /etc/nginx directory so its accessible as a reference to the
-new nginx defaults
-mv /etc/nginx /etc/nginx-default
-
 echo "All done.";

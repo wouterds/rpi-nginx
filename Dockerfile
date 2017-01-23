@@ -2,7 +2,7 @@ FROM resin/rpi-raspbian:jessie
 MAINTAINER Wouter De Schuyter <wouter.de.schuyter@gmail.com>
 
 # Install NGINX from source
-
+RUN /build_nginx.sh 1.6.2
 
 # Forward access & error logs to docker log collector
 RUN ln -sf /dev/stdout /var/log/nginx/access.log

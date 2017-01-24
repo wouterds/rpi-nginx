@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Requirements
-sudo apt-get install curl wget build-essential -y
+sudo apt-get install curl wget build-essential zlib1g-dev -y
 
 # Names & versions of each package
 # export VERSION_OPENSSL=openssl-1.0.2d

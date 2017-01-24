@@ -25,6 +25,6 @@ VOLUME ["/usr/share/nginx/www"]
 VOLUME ["/etc/nginx"]
 
 # Exposed ports
-EXPOSE 80 443
+EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]

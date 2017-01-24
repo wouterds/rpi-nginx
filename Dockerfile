@@ -1,6 +1,7 @@
 FROM jsurf/rpi-raspbian:latest
 MAINTAINER Wouter De Schuyter <wouter.de.schuyter@gmail.com>
 
+# Enable cross build for automated builds
 RUN [ "cross-build-start" ]
 
 # Nginx version
@@ -67,6 +68,7 @@ RUN apt-get update \
 RUN ln -sf /dev/stdout /var/log/nginx/access.log
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
 
+# Disable cross build again
 RUN [ "cross-build-end" ]
 
 # Volumes

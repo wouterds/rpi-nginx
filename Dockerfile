@@ -5,7 +5,7 @@ MAINTAINER Wouter De Schuyter <wouter.de.schuyter@gmail.com>
 RUN [ "cross-build-start" ]
 
 # Nginx version
-ENV NGINX_VERSION 1.4.7
+ENV NGINX_VERSION 1.5.13
 
 # Names & versions of each package
 ENV VERSION_PCRE=pcre-8.40

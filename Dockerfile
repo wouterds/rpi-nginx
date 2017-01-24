@@ -6,7 +6,7 @@ ARG v
 
 # Names & versions of each package
 ENV VERSION_PCRE=pcre-8.40
-ENV VERSION_NGINX=nginx-$1
+ENV VERSION_NGINX=nginx-$v
 
 # URLs to the source directories
 ENV SOURCE_PCRE=ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/

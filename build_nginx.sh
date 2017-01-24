@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Requirements
-sudo apt-get install curl wget build-essential zlib1g-dev -y
+sudo apt-get install curl wget build-essential zlib1g-dev openssl libssl-dev libperl-dev -y
 
 # Names & versions of each package
 export VERSION_PCRE=pcre-8.40
@@ -39,6 +39,7 @@ mkdir -p $BPATH/nginx
 --with-http_v2_module \
 --with-file-aio \
 --with-ipv6 \
+--with-http_ssl_module \
 --with-http_gzip_static_module \
 --with-http_stub_status_module \
 --without-mail_pop3_module \

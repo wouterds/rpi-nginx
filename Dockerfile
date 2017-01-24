@@ -69,10 +69,6 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/
 # Disable cross build again
 RUN [ "cross-build-end" ]
 
-# Volumes
-VOLUME ["/usr/share/nginx/www"]
-VOLUME ["/etc/nginx"]
-
 # Exposed ports
 EXPOSE 80 443
 

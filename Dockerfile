@@ -5,7 +5,7 @@ MAINTAINER Wouter De Schuyter <wouter.de.schuyter@gmail.com>
 ARG v
 
 # Make sure everything is up to date
-RUN sudo apt-get update && sudo apt-get upgrade -y
+RUN sudo apt-get update && sudo apt-get upgrade -y --no-install-recommends
 
 # Copy build script
 COPY build_nginx.sh /build_nginx.sh

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Requirements
-sudo apt-get install -y \
+sudo apt-get install -y --no-install-recommends \
     curl \
     wget \
     build-essential \

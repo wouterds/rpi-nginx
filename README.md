@@ -2,6 +2,7 @@
 
 ### Supported tags and respective `Dockerfile` links
 
+-	[`1.1.19`, `latest` (*Dockerfile*)](https://github.com/wouterds/raspberrypi-nginx/tree/1.1.19/Dockerfile)
 -	[`1.0.15`, `latest` (*Dockerfile*)](https://github.com/wouterds/raspberrypi-nginx/tree/1.0.15/Dockerfile)
 
 ### What is Nginx?

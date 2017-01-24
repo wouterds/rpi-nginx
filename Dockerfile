@@ -54,8 +54,7 @@ RUN apt-get update \
     --without-mail_smtp_module \
     --without-mail_imap_module \
 && make && make install \
-&& echo '' >> /etc/nginx/nginx.conf \
-&& echo 'include /etc/nginx/conf.d/*' >> /etc/nginx/nginx.conf \
+&& sed -i '$s#}#\ninclude /etc/nginx/conf.d/*;\n&#' /etc/nginx/nginx.conf \
 && apt-get remove --purge -y \
     curl \
     wget \

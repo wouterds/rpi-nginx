@@ -1,4 +1,4 @@
-FROM jsurf/rpi-raspbian:jessie
+FROM jsurf/rpi-raspbian:latest
 MAINTAINER Wouter De Schuyter <wouter.de.schuyter@gmail.com>
 
 # Nginx version

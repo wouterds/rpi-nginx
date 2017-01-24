@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Requirements
+sudo apt-get install curl wget build-essential -y
+
 # Names & versions of each package
 # export VERSION_OPENSSL=openssl-1.0.2d
 export VERSION_PCRE=pcre-8.39

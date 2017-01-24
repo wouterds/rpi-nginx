@@ -1,6 +1,8 @@
 FROM jsurf/rpi-raspbian:latest
 MAINTAINER Wouter De Schuyter <wouter.de.schuyter@gmail.com>
 
+RUN [ "cross-build-start" ]
+
 # Nginx version
 ENV NGINX_VERSION 1.0.15
 
@@ -14,8 +16,6 @@ ENV SOURCE_NGINX=http://nginx.org/download/
 
 # Build path
 ENV BPATH=/build
-
-RUN [ "cross-build-start" ]
 
 # Make sure everything is up to date, get dependencies, get source files, configure, install & clean up in 1 RUN command.
 # It's done like this because Docker creates intermediate containers for every RUN command you use which increases the image size by a lot.

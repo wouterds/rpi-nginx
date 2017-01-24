@@ -7,9 +7,6 @@ ARG v
 # Make sure everything is up to date
 RUN sudo apt-get update && sudo apt-get upgrade -y
 
-# Requirements
-RUN sudo apt-get install curl wget build-essential -y
-
 # Copy build script
 COPY build_nginx.sh /build_nginx.sh
 

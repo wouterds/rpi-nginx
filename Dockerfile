@@ -54,7 +54,9 @@ RUN apt-get update \
     --without-mail_smtp_module \
     --without-mail_imap_module \
 && make && make install \
-&& sed -i '/default_type  application\/octet-stream;/a server_names_hash_bucket_size 64;\ninclude /etc/nginx/conf.d/*;' /etc/nginx/nginx.conf \
+&& sed -ie 's/server_name  localhost/server_name _ localhost/g' /etc/nginx/nginx.conf \
+&& sed -i '/default_type  application\/octet-stream;/a     server_names_hash_bucket_size 64;' /etc/nginx/nginx.conf \
+&& sed -i '$s#}# \ninclude /etc/nginx/conf.d/*;\n&#' /etc/nginx/nginx.conf \
 && apt-get remove --purge -y \
     curl \
     wget \

@@ -15,6 +15,8 @@ ENV SOURCE_NGINX=http://nginx.org/download/
 # Build path
 ENV BPATH=/build
 
+RUN [ "cross-build-start" ]
+
 # Make sure everything is up to date, get dependencies, get source files, configure, install & clean up in 1 RUN command.
 # It's done like this because Docker creates intermediate containers for every RUN command you use which increases the image size by a lot.
 RUN apt-get update \
@@ -64,6 +66,8 @@ RUN apt-get update \
 # Forward access & error logs to docker log collector
 RUN ln -sf /dev/stdout /var/log/nginx/access.log
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
+
+RUN [ "cross-build-end" ]
 
 # Volumes
 VOLUME ["/usr/share/nginx/www"]

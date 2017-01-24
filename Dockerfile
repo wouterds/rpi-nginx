@@ -21,7 +21,6 @@ ENV BPATH=/build
 # Make sure everything is up to date, get dependencies, get source files, configure, install & clean up in 1 RUN command.
 # It's done like this because Docker creates intermediate containers for every RUN command you use which increases the image size by a lot.
 RUN apt-get update \
-&& sudo apt-get upgrade -y --no-install-recommends \
 && apt-get install -y --no-install-recommends \
     curl \
     wget \

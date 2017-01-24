@@ -4,7 +4,7 @@
 sudo apt-get install curl wget build-essential zlib1g-dev -y
 
 # Names & versions of each package
-export VERSION_PCRE=pcre-8.39
+export VERSION_PCRE=pcre-8.40
 export VERSION_NGINX=nginx-$1
 
 # URLs to the source directories

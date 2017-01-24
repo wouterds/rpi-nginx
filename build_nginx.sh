@@ -36,7 +36,6 @@ mkdir -p $BPATH/nginx
 --error-log-path=/var/log/nginx/error.log \
 --http-log-path=/var/log/nginx/access.log \
 --with-pcre=$BPATH/$VERSION_PCRE \
---with-http_v2_module \
 --with-file-aio \
 --with-ipv6 \
 --with-http_ssl_module \

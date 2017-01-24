@@ -16,5 +16,4 @@ Nginx (pronounced "engine-x") is an open source reverse proxy server for HTTP, H
 
 ### This Image on
 
-* [DockerHub](https://hub.docker.com/r/wouterds/raspberrypi-nginx)
-* [GitHub](https://github.com/wouterds/raspberrypi-nginx)
+[GitHub](https://github.com/wouterds/raspberrypi-nginx) & [DockerHub](https://hub.docker.com/r/wouterds/raspberrypi-nginx)

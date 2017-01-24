@@ -1,5 +1,7 @@
 # Nginx Docker image for Raspberry Pi
 
+A basic Nginx image that's compatible with Raspberry Pi. Automated builds are pushed whenever a new version of Nginx becomes available.
+
 ### Supported tags and respective `Dockerfile` links
 
 -	[`1.6.3`, `latest` (*Dockerfile*)](https://github.com/wouterds/raspberrypi-nginx/tree/1.6.3/Dockerfile)

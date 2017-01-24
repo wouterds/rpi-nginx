@@ -49,13 +49,13 @@ cd $BPATH/$VERSION_NGINX
 mkdir -p $BPATH/nginx
 #./configure --with-cc-opt="-I $STATICLIBSSL/include -I/usr/include" \
 # --with-ld-opt="-L $STATICLIBSSL/lib -Wl,-rpath -lssl -lcrypto -ldl -lz" \
+# --with-http_ssl_module \
 ./configure --sbin-path=/usr/sbin/nginx \
 --conf-path=/etc/nginx/nginx.conf \
 --pid-path=/var/run/nginx.pid \
 --error-log-path=/var/log/nginx/error.log \
 --http-log-path=/var/log/nginx/access.log \
 --with-pcre=$BPATH/$VERSION_PCRE \
-# --with-http_ssl_module \
 --with-http_v2_module \
 --with-file-aio \
 --with-ipv6 \

@@ -1,12 +1,12 @@
-FROM resin/rpi-raspbian:jessie
+FROM jsurf/rpi-raspbian:jessie
 MAINTAINER Wouter De Schuyter <wouter.de.schuyter@gmail.com>
 
-# Args
-ARG v
+# Nginx version
+ENV NGINX_VERSION 1.0.15
 
 # Names & versions of each package
 ENV VERSION_PCRE=pcre-8.40
-ENV VERSION_NGINX=nginx-$v
+ENV VERSION_NGINX=nginx-$NGINX_VERSION
 
 # URLs to the source directories
 ENV SOURCE_PCRE=ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/

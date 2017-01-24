@@ -1,7 +1,14 @@
 #!/usr/bin/env bash
 
 # Requirements
-sudo apt-get install curl wget build-essential zlib1g-dev openssl libssl-dev libperl-dev -y
+sudo apt-get install -y \
+    curl \
+    wget \
+    build-essential \
+    zlib1g-dev \
+    openssl \
+    libssl-dev \
+    libperl-dev
 
 # Names & versions of each package
 export VERSION_PCRE=pcre-8.40

@@ -46,6 +46,4 @@ server {
 
 ---
 
-### This image is available on
-
-[GitHub](https://github.com/wouterds/raspberrypi-nginx) & [DockerHub](https://hub.docker.com/r/wouterds/raspberrypi-nginx)
+This image is available on [GitHub](https://github.com/wouterds/raspberrypi-nginx) & [DockerHub](https://hub.docker.com/r/wouterds/raspberrypi-nginx).

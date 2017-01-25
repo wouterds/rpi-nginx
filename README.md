@@ -1,6 +1,6 @@
 # Nginx Docker image for Raspberry Pi
 
-A basic Nginx image that's compatible with Raspberry Pi. Automated builds are pushed whenever a new version of Nginx becomes available. All versions have http & https support, since version `1.9.15` there's also http2 support. Legacy build support up to `1.6.3` (April 2015).
+A basic Nginx image that's compatible with Raspberry Pi. Automated builds are pushed whenever a new version of Nginx becomes available. All versions have http & https support, since version `1.9` there's also http2 support. Legacy build support up to `1.6.3` (April 2015) on a best-efforts basis.
 
 ### Supported tags and respective `Dockerfile` links
 

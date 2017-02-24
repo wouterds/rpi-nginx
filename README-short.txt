@@ -1,1 +1,1 @@
-A basic Nginx image that's compatible with Raspberry Pi.
+Raspberry Pi compatible Nginx Docker images

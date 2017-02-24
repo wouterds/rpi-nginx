@@ -1,15 +1,12 @@
 # Nginx Docker image for Raspberry Pi
 
-A basic Nginx image that's compatible with Raspberry Pi. Automated builds are pushed whenever a new version of Nginx becomes available. All versions have http & https support, since version `1.9` there's also http2 support. Legacy build support up to `1.6` (April 2015) on a best-efforts basis.
+A basic Nginx image that's compatible with Raspberry Pi. Automated builds are pushed whenever a new version of Nginx becomes available. All versions have http & https support, since version `1.9` there's also http2 support. Legacy build support up to `1.6` (April 2015).
 
 ### Supported tags and respective `Dockerfile` links
 
-- [`1.11.0`](https://github.com/wouterds/raspberrypi-nginx/tree/1.11.0/Dockerfile), [`1.11.1`](https://github.com/wouterds/raspberrypi-nginx/tree/1.11.1/Dockerfile), [`1.11.2`](https://github.com/wouterds/raspberrypi-nginx/tree/1.11.2/Dockerfile), [`1.11.3`](https://github.com/wouterds/raspberrypi-nginx/tree/1.11.3/Dockerfile),  [`1.11.4`](https://github.com/wouterds/raspberrypi-nginx/tree/1.11.4/Dockerfile),  [`1.11.5`](https://github.com/wouterds/raspberrypi-nginx/tree/1.11.5/Dockerfile),  [`1.11.6`](https://github.com/wouterds/raspberrypi-nginx/tree/1.11.6/Dockerfile),  [`1.11.7`](https://github.com/wouterds/raspberrypi-nginx/tree/1.11.7/Dockerfile),  [`1.11.8`](https://github.com/wouterds/raspberrypi-nginx/tree/1.11.8/Dockerfile),  [`1.11.9`](https://github.com/wouterds/raspberrypi-nginx/tree/1.11.9/Dockerfile), [`1.11.10`, `latest` (*Dockerfile*)](https://github.com/wouterds/raspberrypi-nginx/tree/1.11.10/Dockerfile)
-- [`1.10.0`](https://github.com/wouterds/raspberrypi-nginx/tree/1.10.0/Dockerfile), [`1.10.1`](https://github.com/wouterds/raspberrypi-nginx/tree/1.10.1/Dockerfile), [`1.10.2`](https://github.com/wouterds/raspberrypi-nginx/tree/1.10.2/Dockerfile), [`1.10.3` (*Dockerfile*)](https://github.com/wouterds/raspberrypi-nginx/tree/1.10.3/Dockerfile)
+- [`1.11.8`](https://github.com/wouterds/raspberrypi-nginx/tree/1.11.8/Dockerfile),  [`1.11.9`](https://github.com/wouterds/raspberrypi-nginx/tree/1.11.9/Dockerfile), [`1.11.10`, `latest` (*Dockerfile*)](https://github.com/wouterds/raspberrypi-nginx/tree/1.11.10/Dockerfile)
+- [`1.10.1`](https://github.com/wouterds/raspberrypi-nginx/tree/1.10.1/Dockerfile), [`1.10.2`](https://github.com/wouterds/raspberrypi-nginx/tree/1.10.2/Dockerfile), [`1.10.3` (*Dockerfile*)](https://github.com/wouterds/raspberrypi-nginx/tree/1.10.3/Dockerfile)
 - [`1.9.13`](https://github.com/wouterds/raspberrypi-nginx/tree/1.9.13/Dockerfile), [`1.9.14`](https://github.com/wouterds/raspberrypi-nginx/tree/1.9.14/Dockerfile), [`1.9.15` (*Dockerfile*)](https://github.com/wouterds/raspberrypi-nginx/tree/1.9.15/Dockerfile)
-- [`1.8.0`](https://github.com/wouterds/raspberrypi-nginx/tree/1.8.0/Dockerfile), [`1.8.1` (*Dockerfile*)](https://github.com/wouterds/raspberrypi-nginx/tree/1.8.1/Dockerfile)
-- [`1.7.10`](https://github.com/wouterds/raspberrypi-nginx/tree/1.7.10/Dockerfile), [`1.7.11`](https://github.com/wouterds/raspberrypi-nginx/tree/1.7.11/Dockerfile), [`1.7.12` (*Dockerfile*)](https://github.com/wouterds/raspberrypi-nginx/tree/1.7.12/Dockerfile)
-- [`1.6.1`](https://github.com/wouterds/raspberrypi-nginx/tree/1.6.1/Dockerfile), [`1.6.2`](https://github.com/wouterds/raspberrypi-nginx/tree/1.6.2/Dockerfile), [`1.6.3` (*Dockerfile*)](https://github.com/wouterds/raspberrypi-nginx/tree/1.6.3/Dockerfile)
 
 ### What is Nginx?
 

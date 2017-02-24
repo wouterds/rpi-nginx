@@ -4,9 +4,9 @@ A basic Nginx image that's compatible with Raspberry Pi. Automated builds are pu
 
 ### Supported tags and respective `Dockerfile` links
 
-- [`1.11.8`](https://github.com/wouterds/raspberrypi-nginx/tree/1.11.8/Dockerfile),  [`1.11.9`](https://github.com/wouterds/raspberrypi-nginx/tree/1.11.9/Dockerfile), [`1.11.10`, `latest` (*Dockerfile*)](https://github.com/wouterds/raspberrypi-nginx/tree/1.11.10/Dockerfile)
-- [`1.10.1`](https://github.com/wouterds/raspberrypi-nginx/tree/1.10.1/Dockerfile), [`1.10.2`](https://github.com/wouterds/raspberrypi-nginx/tree/1.10.2/Dockerfile), [`1.10.3` (*Dockerfile*)](https://github.com/wouterds/raspberrypi-nginx/tree/1.10.3/Dockerfile)
-- [`1.9.13`](https://github.com/wouterds/raspberrypi-nginx/tree/1.9.13/Dockerfile), [`1.9.14`](https://github.com/wouterds/raspberrypi-nginx/tree/1.9.14/Dockerfile), [`1.9.15` (*Dockerfile*)](https://github.com/wouterds/raspberrypi-nginx/tree/1.9.15/Dockerfile)
+- [`1.11.8`](https://github.com/wouterds/rpi-nginx/tree/1.11.8/Dockerfile),  [`1.11.9`](https://github.com/wouterds/rpi-nginx/tree/1.11.9/Dockerfile), [`1.11.10`, `latest` (*Dockerfile*)](https://github.com/wouterds/rpi-nginx/tree/1.11.10/Dockerfile)
+- [`1.10.1`](https://github.com/wouterds/rpi-nginx/tree/1.10.1/Dockerfile), [`1.10.2`](https://github.com/wouterds/rpi-nginx/tree/1.10.2/Dockerfile), [`1.10.3` (*Dockerfile*)](https://github.com/wouterds/rpi-nginx/tree/1.10.3/Dockerfile)
+- [`1.9.13`](https://github.com/wouterds/rpi-nginx/tree/1.9.13/Dockerfile), [`1.9.14`](https://github.com/wouterds/rpi-nginx/tree/1.9.14/Dockerfile), [`1.9.15` (*Dockerfile*)](https://github.com/wouterds/rpi-nginx/tree/1.9.15/Dockerfile)
 
 ### What is Nginx?
 
@@ -27,7 +27,7 @@ $ docker run -d \
     -v ~/nginx/sites:/code \
     -v ~/nginx/conf:/etc/nginx/conf.d \
     --restart always \
-    wouterds/raspberrypi-nginx
+    wouterds/rpi-nginx
 ```
 
 An example configuration file for a website, let's say `~/nginx/conf/be.wouterdeschuyter`, could for instance look like the following.
@@ -43,4 +43,4 @@ server {
 
 ---
 
-This image is available on [GitHub](https://github.com/wouterds/raspberrypi-nginx) & [DockerHub](https://hub.docker.com/r/wouterds/raspberrypi-nginx).
+This image is available on [GitHub](https://github.com/wouterds/rpi-nginx) & [DockerHub](https://hub.docker.com/r/wouterds/rpi-nginx).

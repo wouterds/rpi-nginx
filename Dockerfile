@@ -1,7 +1,10 @@
+# Raspbian with Qemu
 FROM jsurf/rpi-raspbian:latest
+
+# Maintainer
 MAINTAINER Wouter De Schuyter <wouter.de.schuyter@gmail.com>
 
-# Enable cross build for automated builds
+# Compile ARM on x86/x64
 RUN [ "cross-build-start" ]
 
 # Nginx version

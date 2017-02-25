@@ -16,31 +16,6 @@ Nginx (pronounced "engine-x") is an open source reverse proxy server for HTTP, H
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/nginx/logo.png)
 
-### Example usage
-
-Nginx can be used for all sorts of things, below a simple example to configure it as a webserver. In this example we're assuming you will be hosting multiple websites. Your websites will be located in `~/nginx/sites` and your configuration files in `~/nginx/conf`.
-
-```console
-$ docker run -d \
-    --name nginx \
-    -p 80:80 \
-    -v ~/nginx/sites:/code \
-    -v ~/nginx/conf:/etc/nginx/conf.d \
-    --restart always \
-    wouterds/rpi-nginx
-```
-
-An example configuration file for a website, let's say `~/nginx/conf/be.wouterdeschuyter`, could for instance look like the following.
-
-```apacheconf
-server {
-    listen 80;
-    server_name wouterdeschuyter.be;
-    root /code/be.wouterdeschuyter/public;
-    index index.html;
-}
-```
-
 ---
 
 This image is available on [GitHub](https://github.com/wouterds/rpi-nginx) & [DockerHub](https://hub.docker.com/r/wouterds/rpi-nginx).
